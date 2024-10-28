@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/logo.svg"/>
+    <link rel="apple-touch-icon" href="img/logo.svg"/>
+    <link href="./begetarian.css" type="text/css" rel="stylesheet">
+    <title>책식주의자</title>
+</head>
+<body>
+<header>
+    <a href="" alt="로고">
+        <img src="img/logo.svg" alt="">
+    </a>
+    <nav>
+        <ul>
+            <li>
+                <a href="">영상</a>
+            </li>
+            <li>
+                <a href="">프로젝트 개요</a>
+            </li>
+            <li>
+                <a href="">디자인</a>
+            </li>
+            <li>
+                <a href="">앱 기능</a>
+            </li>
+            <li>
+                <a href="">팀원소개</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div  class="title">
+        <p class="wave-text">원하는 사람들과 원하는 책을 골라먹자</p>
+        <img src="img/main1.svg" width="100%" alt="">
+    </div>
+    <div class="video-container">
+        <video src="img/cf.mp4" width="80%" controls></video>
+    </div>
+    <div class="hip">
+        <div class="text_box">
+            <span class="text"></span><span class="blink">|</span>
+        </div>
+    </div>
+    <div class="chart">
+        <div class="chart-container">
+            <div class="chart-pc">77.8</div>
+            <div class="chart1"></div>
+            <div class="year">2019</div>
+        </div>
+        <div class="chart-container">
+            <div class="chart-pc">78.1</div>
+            <div class="chart2"></div>
+            <div class="year">2021</div>
+        </div>
+        <div class="chart-container">
+            <div class="chart-pc">74.5</div>
+            <div class="chart3"></div>
+            <div class="year">2023</div>
+        </div>
+    </div>
+    <div class="line" style="position: relative; z-index: 10;">
+        <img src="img/line.svg" style="position: absolute; z-index: 20;">
+    </div>
+    <div class="overview">
+        <img src="img/overview.svg" width="70%">
+    </div>
+    <div class="goal">
+        <img src="img/goal.svg" width="77%">
+    </div>
+    <div class="design">
+        <p id="wave-text">원하는 사람들과 원하는 책을 골라먹자</p>
+    </div>
+    <div class="odok">
+        <img src="img/odok.svg" width="100%">
+    </div>
+    <div class="ph1">
+        <img src="img/ph1.svg" width="77%">
+    </div>
+    <div class="ph2">
+        <video src="img/ph2.mp4" autoplay></video>
+    </div>
+<!--    <div class="team">-->
+<!--        <ul>-->
+<!--            <li>planner</li>-->
+<!--            <li>김채린</li>-->
+<!--            <li><a href="">포트폴리오</a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+</main>
+<footer>
+    <img src="img/footer.svg" width="100%">
+</footer>
+
+
+
+<script>
+    const content = "텍스트 힙";
+    const text = document.querySelector(".text");
+    let i = 0;
+
+    function typing(){
+        let txt = content[i++];
+        text.innerHTML += txt=== "\n" ? "<br/>": txt;
+        if (i > content.length) {
+            text.textContent = "";
+            i = 0;
+        }
+    }
+    setInterval(typing, 350)
+</script>
+
+
+</body>
+</html>
